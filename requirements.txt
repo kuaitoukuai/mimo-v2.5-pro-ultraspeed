@@ -1,0 +1,14 @@
+# OpenAI-Compatible API for MiMo v2.5-pro-ultraspeed (Browser Direct)
+# 浏览器直连版本依赖列表
+
+# Web 框架
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+
+# 浏览器自动化（通过 CDP 协议操控 Edge/Chrome）
+DrissionPage>=4.0.0
+
+# 注意：
+# 1. 需要预先安装 Microsoft Edge 或 Chrome 浏览器
+# 2. 需要以 --remote-debugging-port=9333 启动 Edge 并登录 ultraspeed.xiaomimimo.com
+# 3. 启动命令：python openai_api.py（默认监听 0.0.0.0:8000）
